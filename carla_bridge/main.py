@@ -12,13 +12,12 @@ import carla
 import yaml
 from cyber.proto.clock_pb2 import Clock
 
+sys.path.append("../")
+
 from carla_bridge.core.actor_factory import ActorFactory
 from carla_bridge.core.carla_spawn_objects import CarlaSpawnObjects
 from carla_bridge.core.node import CyberNode
 from carla_bridge.utils.logurus import init_log
-
-sys.path.append("../")
-
 
 class CarlaCyberBridge(CyberNode):
 

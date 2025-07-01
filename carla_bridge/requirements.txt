@@ -1,7 +1,8 @@
 --index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 numpy==1.26.4
-carla==0.9.14
+carla==0.9.15
 loguru==0.7.0
 networkx
+opencv-python
 transforms3d==0.4.1
