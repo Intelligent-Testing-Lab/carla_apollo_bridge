@@ -3,10 +3,13 @@
 # Copy map files to /apollo/modules/map/data
 cp -r map/. /apollo/modules/map/data
 
+# run script to generate sim and routing maps for all carla_town instances
+
 # Install requirements
 pip3 install -r requirements.txt
 
 # Set environment variables
+# need to update to Apollo 10 paths
 if [ -f ~/.bashrc ] && ! grep -q 'export PYTHONPATH=$PYTHONPATH:/apollo/cyber' ~/.bashrc; then
     echo 'export PYTHONPATH=$PYTHONPATH:/apollo/cyber' >> ~/.bashrc
     echo 'export PYTHONPATH=$PYTHONPATH:/apollo/cyber/python' >> ~/.bashrc
