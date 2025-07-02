@@ -14,7 +14,7 @@
  * limitations under the License.
  *****************************************************************************/
 
-#include "modules/control/controller/mpc_controller.h"
+#include "modules/control/controllers/mpc_controller/mpc_controller.h"
 
 #include <algorithm>
 #include <iomanip>
