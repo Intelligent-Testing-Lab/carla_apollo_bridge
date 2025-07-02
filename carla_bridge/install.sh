@@ -97,16 +97,16 @@ for map in "$CARLA_BRIDGE_ROOT_DIR/map/"*; do
             ln -s "$apollo_map_file_loc" "$apollo_data_symlink_loc"
             info "Created symlink $apollo_map_file_loc >> $apollo_data_symlink_loc"
         else   
-            echo "Symlink to $apollo_data_symlink_loc already exists."
+            error "Symlink to $apollo_data_symlink_loc already exists."
         fi 
     done
 done
 
-echo "Installing Requirements..."
+info "Installing Requirements..."
 # Install requirements
 pip3 install -r requirements.txt
 
-echo "Adding Cyber RT and Apollo to PYTHONPATH environmental variable"
+info "Adding Cyber RT and Apollo to PYTHONPATH environmental variable"
 # Set environment variables
 # need to update to Apollo 10 paths 
 if [ -f ~/.bashrc ] && ! grep -q 'export PYTHONPATH=$PYTHONPATH:/opt/apollo/neo/python/cyber' ~/.bashrc; then
