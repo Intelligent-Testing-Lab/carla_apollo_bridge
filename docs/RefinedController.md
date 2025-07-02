@@ -1,3 +1,5 @@
+# *NOTE* DOES NOT WORK WITH APOLLO 10. Needs porting as the `Controller` class has been replaced by `ControlTask`
+
 ## Demo Video
 
 Followings are the demo videos showing the performance of improved controller.
@@ -10,9 +12,7 @@ Demo: turn right - 90-degree sharp right turn, Town01
 
 [![Demo: right turn](https://img.youtube.com/vi/oOJiw21AAGk/0.jpg)](https://www.youtube.com/watch?v=oOJiw21AAGk)
 
-
 The above demo is using the tuned MPC controller with turning ratio (in bridge) tuned. This is the default co-simulation control performance that this project aims to provide.
-
 
 To achieve the above performance, [turning ratio](../carla_bridge/actor/ego_vehicle.py#L57) is set as the following:
 
